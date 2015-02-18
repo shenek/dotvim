@@ -22,6 +22,8 @@ pathogen
 jedi-vim
   python code completion
 
+syntastic
+  syntax checker (for python it needs flake8 to be installed)
 
 Features
 ========
