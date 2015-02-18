@@ -12,3 +12,8 @@ set statusline+=%*
 " let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" goto using jedi
+" let g:jedi#goto_command='gf'
+let g:jedi#goto_assignments_command='gf'
+let g:jedi#use_tabs_not_buffers=0
