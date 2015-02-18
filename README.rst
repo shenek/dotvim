@@ -19,6 +19,9 @@ Plugins
 pathogen
   it is used to install the plugins as bundles
 
+jedi-vim
+  python code completion
+
 
 Features
 ========
