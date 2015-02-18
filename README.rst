@@ -35,7 +35,6 @@ Features
 ========
 I'll try to describe a particular config part in this section.
 
-
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
