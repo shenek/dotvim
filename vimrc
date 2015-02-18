@@ -2,8 +2,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-syntax on
-
 " Syntastics recommended settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -17,3 +15,8 @@ let g:syntastic_check_on_wq = 0
 " let g:jedi#goto_command='gf'
 let g:jedi#goto_assignments_command='gf'
 let g:jedi#use_tabs_not_buffers=0
+
+syntax on
+
+" color scheme
+:colorscheme 256-grayvim
