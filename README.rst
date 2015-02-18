@@ -31,6 +31,9 @@ vim-colorschemes
 vim-airline
   nice status bar
 
+clang_complete
+  clang completion for C/C++ code (needs llvm installed + paths set)
+
 Features
 ========
 I'll try to describe a particular config part in this section.

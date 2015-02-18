@@ -50,7 +50,21 @@ let g:airline_symbols.space = "\ua0"
 let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
 let g:clang_hl_errors=1
 
+" syntax for files
 syntax on
 
 " color scheme
 :colorscheme 256-grayvim
+
+" line numbers
+:set number
+
+" Special characters for endline etc
+set list
+set listchars=trail:·,tab:▸\ ,eol:¬
+
+" indentation for specific file types
+filetype plugin indent on
+
+" keep the cursor in the screen center
+set scrolloff=999
