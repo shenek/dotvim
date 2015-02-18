@@ -50,11 +50,17 @@ let g:airline_symbols.space = "\ua0"
 let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
 let g:clang_hl_errors=1
 
+" gitgutter
+let g:gitgutter_sign_added = '➕'
+let g:gitgutter_sign_modified = '≈'
+let g:gitgutter_sign_removed = '➖'
+let g:gitgutter_sign_removed_first_line = '➖➖'
+let g:gitgutter_sign_modified_removed = '≈➖'
+let g:gitgutter_highlight_lines = 1
+
 " syntax for files
 syntax on
 
-" color scheme
-:colorscheme 256-grayvim
 
 " line numbers
 :set number
@@ -68,3 +74,16 @@ filetype plugin indent on
 
 " keep the cursor in the screen center
 set scrolloff=999
+
+" highligth cursor row and column
+set cursorline
+set cursorcolumn
+
+" beter :xx<tab> completion
+set wildmenu
+
+" color scheme
+set t_Co=256
+:colorscheme zenburn
+:let g:zenburn_high_Contrast = 1
+:let g:zenburn_force_dark_Background = 1

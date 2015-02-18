@@ -34,6 +34,9 @@ vim-airline
 clang_complete
   clang completion for C/C++ code (needs llvm installed + paths set)
 
+vim-gitgutter
+  display git status in gutter
+
 Features
 ========
 I'll try to describe a particular config part in this section.
