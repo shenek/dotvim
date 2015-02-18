@@ -25,6 +25,12 @@ jedi-vim
 syntastic
   syntax checker (for python it needs flake8 to be installed)
 
+vim-colorschemes
+  some color schemes
+
+vim-airline
+  nice status bar
+
 Features
 ========
 I'll try to describe a particular config part in this section.

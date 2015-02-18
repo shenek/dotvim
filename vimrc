@@ -16,6 +16,10 @@ let g:syntastic_check_on_wq = 0
 let g:jedi#goto_assignments_command='gf'
 let g:jedi#use_tabs_not_buffers=0
 
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
 syntax on
 
 " color scheme
