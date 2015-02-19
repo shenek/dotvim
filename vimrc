@@ -92,6 +92,14 @@ set hlsearch
 set incsearch
 set smartcase
 
+" folding
+set foldmethod=syntax
+noremap <space> za
+
+" tab switch
+noremap <s-l> gt
+noremap <s-h> gT
+
 " remap ctrl + space to code completion
 inoremap <c-@> <c-x><c-o>
 "
