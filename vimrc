@@ -102,9 +102,17 @@ noremap <s-h> gT
 
 " remap ctrl + space to code completion
 inoremap <c-@> <c-x><c-o>
-"
+
 " File completion with crtl + f
 inoremap <c-f> <c-x><c-f>
+
+" remap some Editor commands
+command! E Explore
+command! Ve Vexplore
+command! Te Texplore
+command! He Hexplore
+command! Le Lexplore
+command! Se Sexplore
 
 " beter :xx<tab> completion
 set wildmenu
