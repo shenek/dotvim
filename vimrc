@@ -44,8 +44,8 @@ let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.space = "\ua0"
 " airline bugs...
-:set laststatus=2
-"
+set laststatus=2
+
 " clang completion for editting C sources
 let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
 let g:clang_hl_errors=1
@@ -63,7 +63,7 @@ syntax on
 
 
 " line numbers
-:set number
+set number
 
 " Special characters for endline etc
 set list
@@ -72,6 +72,11 @@ set listchars=trail:·,tab:▸\ ,eol:¬
 " indentation for specific file types
 filetype plugin indent on
 
+" tab handling
+set shiftwidth=4
+set tabstop=4  "tab is displayed as 4 spaces
+set smarttab
+
 " keep the cursor in the screen center
 set scrolloff=999
 
@@ -79,11 +84,25 @@ set scrolloff=999
 set cursorline
 set cursorcolumn
 
+" mouse settings
+set mouse=a
+
+" search updates
+set hlsearch
+set incsearch
+set smartcase
+
+" remap ctrl + space to code completion
+inoremap <c-@> <c-x><c-o>
+"
+" File completion with crtl + f
+inoremap <c-f> <c-x><c-f>
+
 " beter :xx<tab> completion
 set wildmenu
 
 " color scheme
 set t_Co=256
-:colorscheme zenburn
-:let g:zenburn_high_Contrast = 1
-:let g:zenburn_force_dark_Background = 1
+colorscheme zenburn
+let g:zenburn_high_Contrast = 1
+let g:zenburn_force_dark_Background = 1
