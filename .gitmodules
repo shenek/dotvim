@@ -19,3 +19,6 @@
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
