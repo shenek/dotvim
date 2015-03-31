@@ -40,6 +40,9 @@ vim-gitgutter
 vim-multiple-cursors
   support for multiple cursors
 
+searchcomplete
+  search completion
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
@@ -47,6 +50,7 @@ From now on. I'll use this section for such purposes.
 
 * for multiple-cursors use ctrl+n to go into multicursor mode <ESC> to exit the mode. Selection management is done using ctrl+n, ctrl+p, ctrl+x.
 * added shortcut shift+h, shift+l to switch tabs
+* use tab while writing a search expression
 
 Features
 ========
