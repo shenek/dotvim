@@ -114,6 +114,10 @@ command! He Hexplore
 command! Le Lexplore
 command! Se Sexplore
 
+" map leader keys (should be used in a new plugins)
+let mapleader=","
+let maplocalleader=","
+
 " beter :xx<tab> completion
 set wildmenu
 
