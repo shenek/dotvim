@@ -61,6 +61,9 @@ vim-snippets
 vim-kivy
   kivy file syntax highlighting
 
+vim-indent-guides
+  highlight indentation levels
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
