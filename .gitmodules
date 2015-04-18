@@ -43,3 +43,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/vim-kivy"]
+	path = bundle/vim-kivy
+	url = https://github.com/shenek/vim-kivy.git

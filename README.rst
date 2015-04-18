@@ -58,6 +58,9 @@ vim-snipmate
 vim-snippets
   a colection of various snippets
 
+vim-kivy
+  kivy file syntax highlighting
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
