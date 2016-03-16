@@ -47,7 +47,7 @@ let g:airline_symbols.space = "\ua0"
 set laststatus=2
 
 " clang completion for editting C sources
-let g:clang_library_path='/usr/lib/llvm-3.5/lib/'
+let g:clang_library_path='/usr/lib/llvm-3.6/lib/'
 let g:clang_hl_errors=1
 
 " gitgutter
@@ -146,7 +146,7 @@ set viminfo='10,\"100,:20,%,n~/.viminfo
 
 function! ResCur()
   if line("'\"") <= line("$")
-    normal! g`"
+    :normal! g`"
     return 1
   endif
 endfunction
