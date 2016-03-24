@@ -67,6 +67,9 @@ vim-indent-guides
 vim-qml
   qml file syntax highlighting
 
+restore_view.vim
+  should restore vim views(cursors, folds) properly
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
