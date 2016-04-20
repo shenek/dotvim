@@ -1,3 +1,6 @@
+" Don't use compatibility mode
+set nocompatible
+
 " Pathogen plugin
 call pathogen#infect()
 call pathogen#helptags()
