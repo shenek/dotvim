@@ -140,3 +140,6 @@ let g:indent_guides_start_level = 2
 
 " set custom location of view dir
 set viewdir=~/.vimview/
+
+" set the proper shell
+set shell=/bin/bash
