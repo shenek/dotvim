@@ -70,6 +70,12 @@ vim-qml
 restore_view.vim
   should restore vim views(cursors, folds) properly
 
+rust.vim
+  rust syntax plugin form
+
+vim-racer
+  rust code completions
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
@@ -80,6 +86,7 @@ From now on. I'll use this section for such purposes.
 * use tab while writing a search expression
 * to comment a line try <leader> + (c )(cA)(cc)(cn)(cs)
 * to use snippets enter insert mode, write and use <snippet_text><tab> to see the list of snippets examine (bundle/vim-snippets/snippets)
+* To automatically format rust code you can call :RustFmt command
 
 Features
 ========
