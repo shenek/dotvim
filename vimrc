@@ -50,7 +50,7 @@ let g:airline_symbols.space = "\ua0"
 set laststatus=2
 
 " clang completion for editting C sources
-let g:clang_library_path='/usr/lib/llvm-3.6/lib/'
+let g:clang_library_path='/usr/lib/llvm-3.8/lib/'
 let g:clang_hl_errors=1
 
 " gitgutter
