@@ -74,7 +74,7 @@ rust.vim
   rust syntax plugin form
 
 vim-racer
-  rust code completions
+  rust code completions (note that you need to have racer properly configured)
 
 My Hints
 ========
