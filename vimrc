@@ -22,11 +22,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_flake8_args = "--max-line-length=100"
 
-" goto using jedi
-" let g:jedi#goto_command='gf'
-let g:jedi#goto_assignments_command='gf'
-let g:jedi#use_tabs_not_buffers=0
-
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -48,10 +43,6 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.space = "\ua0"
 " airline bugs...
 set laststatus=2
-
-" clang completion for editting C sources
-let g:clang_library_path='/usr/lib/llvm-3.8/lib/'
-let g:clang_hl_errors=1
 
 " gitgutter
 let g:gitgutter_sign_added = '+'
@@ -144,12 +135,8 @@ set viewdir=~/.vimview/
 " set the proper shell
 set shell=/bin/bash
 
-" rust section
-let g:rustfmt_command = "~/.cargo/bin/rustfmt"
-set hidden
-let g:racer_cmd = "~/.cargo/bin/racer"
-let g:racer_experimental_completer = 1
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
+" YCM
+" fix for virtual envs
+if !empty($VIRTUAL_ENV)
+let g:ycm_path_to_python_interpreter=$VIRTUAL_ENV."/bin/python"
+endif

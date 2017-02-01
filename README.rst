@@ -11,16 +11,15 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule init
-    git submodule update
+    git submodule update --init --recursive
+    cd bundle/YouCompleteMe/
+    ./install.sh --all
 
 
 Plugins
 =======
 pathogen
   it is used to install the plugins as bundles
-
-jedi-vim
-  python code completion
 
 syntastic
   syntax checker (for python it needs flake8 to be installed)
@@ -30,9 +29,6 @@ vim-colorschemes
 
 vim-airline
   nice status bar
-
-clang_complete
-  clang completion for C/C++ code (needs llvm installed + paths set)
 
 vim-gitgutter
   display git status in gutter
@@ -73,8 +69,8 @@ restore_view.vim
 rust.vim
   rust syntax plugin form
 
-vim-racer
-  rust code completions (note that you need to have racer properly configured)
+YCM
+  various code completions (jedi, racer required)
 
 My Hints
 ========
