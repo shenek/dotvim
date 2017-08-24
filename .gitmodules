@@ -61,3 +61,6 @@
 [submodule "bundle/vim-racer"]
 	path = bundle/vim-racer
 	url = https://github.com/racer-rust/vim-racer.git
+[submodule "bundle/HiCursorWords"]
+	path = bundle/HiCursorWords
+	url = https://github.com/ihacklog/HiCursorWords.git
