@@ -17,7 +17,7 @@ let g:syntastic_style_error_symbol="✗"
 let g:syntastic_style_warning_symbol="⚠"
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_open=1
-let g:syntastic_python_checkers = ["flake8"]
+let g:syntastic_python_checkers = ["flake8", "mypy"]
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_flake8_args = "--max-line-length=100"
@@ -50,7 +50,7 @@ let g:airline_symbols.space = "\ua0"
 set laststatus=2
 
 " clang completion for editting C sources
-let g:clang_library_path='/usr/lib/llvm-3.8/lib/'
+let g:clang_library_path='/usr/lib/llvm-4.0/lib/'
 let g:clang_hl_errors=1
 
 " gitgutter
