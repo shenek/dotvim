@@ -28,6 +28,9 @@ let g:syntastic_python_mypy_args = "--cache-dir ~/.mypy_cache"
 let g:jedi#goto_assignments_command='gf'
 let g:jedi#use_tabs_not_buffers=0
 
+" autoactivate python virtualenv
+let g:virtualenv_auto_activate = 1
+
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1

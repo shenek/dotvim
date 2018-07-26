@@ -64,3 +64,6 @@
 [submodule "bundle/HiCursorWords"]
 	path = bundle/HiCursorWords
 	url = https://github.com/ihacklog/HiCursorWords.git
+[submodule "bundle/vim-virtualenv"]
+	path = bundle/vim-virtualenv
+	url = https://github.com/plytophogy/vim-virtualenv.git

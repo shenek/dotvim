@@ -79,6 +79,9 @@ vim-racer
 HiCursorWords
   highlight words which are the same as the words under current cursor
 
+vim-virtualenv
+  managing python virtualenvs from vim
+
 My Hints
 ========
 I used to have a lot of notes about vim commands, shortcuts and other stuff spread across multiple note managing systems.
