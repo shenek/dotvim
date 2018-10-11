@@ -1,0 +1,6 @@
+[submodule "pack/git-plugins/start/ale"]
+	path = pack/git-plugins/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "pack/git-plugins/start/vim-airline"]
+	path = pack/git-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
