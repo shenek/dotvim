@@ -21,6 +21,10 @@ vim-gitgutter
 -------------
 show changed lines
 
+vim-colorschemes
+----------------
+various color schemes
+
 Hints
 =====
 a.k.a. what commands should I use

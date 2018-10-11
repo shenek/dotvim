@@ -117,3 +117,10 @@ let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_removed_first_line = '--'
 let g:gitgutter_sign_modified_removed = '≈-'
 let g:gitgutter_highlight_lines = 0
+
+" colorscheme
+set t_Co=256
+colorscheme zenburn
+
+let g:zenburn_high_Contrast = 1
+let g:zenburn_force_dark_Background = 1
