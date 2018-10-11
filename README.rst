@@ -17,6 +17,10 @@ vim-airlane
 -----------
 nicer status bar (you need have fonts-powerline installed)
 
+vim-gitgutter
+-------------
+show changed lines
+
 Hints
 =====
 a.k.a. what commands should I use

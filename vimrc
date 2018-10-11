@@ -109,3 +109,11 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_flake8_options = "--max-line-length=100"
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache"
+
+" gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '≈'
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_removed_first_line = '--'
+let g:gitgutter_sign_modified_removed = '≈-'
+let g:gitgutter_highlight_lines = 0
