@@ -25,6 +25,22 @@ vim-colorschemes
 ----------------
 various color schemes
 
+async.vim
+---------
+normalize async job
+
+vim-lsp
+-------
+async language server protocol plugin
+
+asyncomplete.vim
+----------------
+async completion with timers
+
+asyncomplete-lsp.vim
+--------------------
+use lsp as autocompletion source
+
 Hints
 =====
 a.k.a. what commands should I use

@@ -10,3 +10,15 @@
 [submodule "pack/git-plugins/start/vim-colorschemes"]
 	path = pack/git-plugins/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes
+[submodule "pack/git-plugins/start/async.vim"]
+	path = pack/git-plugins/start/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule "pack/git-plugins/start/vim-lsp"]
+	path = pack/git-plugins/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "pack/git-plugins/start/asyncomplete.vim"]
+	path = pack/git-plugins/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "pack/git-plugins/start/asyncomplete-lsp.vim"]
+	path = pack/git-plugins/start/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
