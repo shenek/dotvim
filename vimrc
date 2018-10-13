@@ -42,12 +42,6 @@ noremap <space> za
 noremap <s-l> gt
 noremap <s-h> gT
 
-" remap ctrl + space to code completion
-inoremap <c-@> <c-x><c-o>
-
-" File completion with crtl + f
-inoremap <c-f> <c-x><c-f>
-
 " remap some Editor commands
 command! E Explore
 command! Ve Vexplore
@@ -63,9 +57,6 @@ let maplocalleader=","
 " beter :xx<tab> completion
 set wildmenu
 
-" set custom location of view dir
-set viewdir=~/.vimview/
-
 " set the proper shell
 set shell=/bin/bash
 
@@ -73,6 +64,26 @@ set shell=/bin/bash
 packloadall
 " load all helptads (errors will be ignored)
 silent! helptags ALL
+
+" jump to the last position when reopening a file
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+" close previews by escape
+au BufWinEnter * nmap <Esc> :pclose<cr>
+
+" temporary files
+set backupdir=~/.vim-temp,.
+set directory=~/.vim-temp,.
+set viminfo='20,\"50,n~/.vim-temp/_viminfo
+set viewdir=~/.vim-temp/viewdir/
+
+" omni completion
+" remap ctrl + space to code completion
+inoremap <c-@> <c-x><c-o>
+" File completion with crtl + f
+inoremap <c-f> <c-x><c-f>
+" closes preview after completion
+autocmd CompleteDone * pclose
+
 
 """ Plugin section
 
@@ -110,7 +121,7 @@ let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_flake8_options = "--max-line-length=100"
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache"
 
-" gitgutter
+"" gitgutter
 let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified = '≈'
 let g:gitgutter_sign_removed = '-'
@@ -118,14 +129,16 @@ let g:gitgutter_sign_removed_first_line = '--'
 let g:gitgutter_sign_modified_removed = '≈-'
 let g:gitgutter_highlight_lines = 0
 
-" colorscheme
+autocmd BufWritePost * GitGutter " update on save
+
+"" colorscheme
 set t_Co=256
 colorscheme zenburn
 
 let g:zenburn_high_Contrast = 1
 let g:zenburn_force_dark_Background = 1
 
-" vim-lsp
+"" vim-lsp + omnicomplete
 if (executable('pyls'))
     au User lsp_setup call lsp#register_server({
         \ 'name': 'pyls',
@@ -133,3 +146,13 @@ if (executable('pyls'))
         \ 'whitelist': ['python']
         \ })
 endif
+
+set omnifunc=lsp#complete
+map gd :LspDefinition<cr>
+map ge :LspDocumentDiagnostics<cr>
+map gs :LspDocumentSymbol<cr>
+map gt :LspTypeDefinition<cr>
+map gh :LspHover<cr>
+
+"" asyncomplete plugin
+let g:asyncomplete_auto_popup = 0
