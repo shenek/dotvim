@@ -22,3 +22,6 @@
 [submodule "pack/git-plugins/start/asyncomplete-lsp.vim"]
 	path = pack/git-plugins/start/asyncomplete-lsp.vim
 	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
+[submodule "pack/git-plugins/start/vim-indent-guides"]
+	path = pack/git-plugins/start/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git

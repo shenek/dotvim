@@ -41,6 +41,10 @@ asyncomplete-lsp.vim
 --------------------
 use lsp as autocompletion source
 
+vim-indent-guides
+-----------------
+makes indentation visible
+
 Hints
 =====
 a.k.a. what commands should I use

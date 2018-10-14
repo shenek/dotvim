@@ -68,7 +68,7 @@ silent! helptags ALL
 " jump to the last position when reopening a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 " close previews by escape
-au BufWinEnter * nmap <Esc> :pclose<cr>
+au VimEnter * nmap <Esc> :pclose<cr>
 
 " temporary files
 set backupdir=~/.vim-temp,.
@@ -156,3 +156,12 @@ map gh :LspHover<cr>
 
 "" asyncomplete plugin
 let g:asyncomplete_auto_popup = 0
+
+"" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_auto_colors = 0
+"hi IndentGuidesOdd  ctermbg=238
+"hi IndentGuidesEven ctermbg=239
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
+:IndentGuidesEnable
