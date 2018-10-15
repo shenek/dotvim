@@ -68,7 +68,7 @@ silent! helptags ALL
 " jump to the last position when reopening a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 " close previews by escape
-au VimEnter * nmap <Esc> :pclose<cr>
+"au VimEnter * nmap <Esc> :pclose<cr>
 
 " temporary files
 set backupdir=~/.vim-temp,.
@@ -82,7 +82,7 @@ inoremap <c-@> <c-x><c-o>
 " File completion with crtl + f
 inoremap <c-f> <c-x><c-f>
 " closes preview after completion
-autocmd CompleteDone * pclose
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
 """ Plugin section
@@ -113,13 +113,21 @@ set laststatus=2
 " signs
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+"highlight ALEErrorSign ctermbg=NONE ctermfg=red
+"highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let g:ale_completion_enabled = 0
 
 " python
+let g:ale_python_auto_pipenv = 1
+let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
+
+let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_flake8_options = "--max-line-length=100"
+" mypy search path
+let $MYPYPATH = system('python -c "import sys;print(\":\".join(sys.path), end=\"\")"')
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache"
+let g:ale_python_mypy_auto_pipenv = 1
 
 "" gitgutter
 let g:gitgutter_sign_added = '+'
@@ -155,7 +163,7 @@ map gt :LspTypeDefinition<cr>
 map gh :LspHover<cr>
 
 "" asyncomplete plugin
-let g:asyncomplete_auto_popup = 0
+let g:asyncomplete_auto_popup = 1
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
