@@ -25,3 +25,6 @@
 [submodule "pack/git-plugins/start/vim-indent-guides"]
 	path = pack/git-plugins/start/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "pack/git-plugins/start/splitjoin.vim"]
+	path = pack/git-plugins/start/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim.git

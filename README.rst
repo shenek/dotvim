@@ -45,6 +45,12 @@ vim-indent-guides
 -----------------
 makes indentation visible
 
+splitjoin.vim
+-------------
+easy switching between single-line and multiline statements (you'd probably need to have ruby installed)
+
 Hints
 =====
 a.k.a. what commands should I use
+
+* use `gS` an `gJ` to split and join statements
