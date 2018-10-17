@@ -49,6 +49,10 @@ splitjoin.vim
 -------------
 easy switching between single-line and multiline statements (you'd probably need to have ruby installed)
 
+restore_view.vim
+----------------
+should restore vim views(cursors, folds) properly
+
 Hints
 =====
 a.k.a. what commands should I use
