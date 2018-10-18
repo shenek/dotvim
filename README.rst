@@ -53,6 +53,10 @@ restore_view.vim
 ----------------
 should restore vim views(cursors, folds) properly
 
+rust.vim
+--------
+vim configuration for rust
+
 Hints
 =====
 a.k.a. what commands should I use

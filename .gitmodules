@@ -31,3 +31,6 @@
 [submodule "pack/git-plugins/start/restore_view.vim"]
 	path = pack/git-plugins/start/restore_view.vim
 	url = https://github.com/vim-scripts/restore_view.vim.git
+[submodule "pack/git-plugins/start/rust.vim"]
+	path = pack/git-plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim

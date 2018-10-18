@@ -154,6 +154,13 @@ if (executable('pyls'))
         \ 'whitelist': ['python']
         \ })
 endif
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
 
 set omnifunc=lsp#complete
 map gd :LspDefinition<cr>
