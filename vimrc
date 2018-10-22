@@ -129,6 +129,9 @@ let $MYPYPATH = system('python -c "import sys;print(\":\".join(sys.path), end=\"
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache"
 let g:ale_python_mypy_auto_pipenv = 1
 
+" rust
+let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
+
 "" gitgutter
 let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified = '≈'
