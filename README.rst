@@ -62,3 +62,5 @@ Hints
 a.k.a. what commands should I use
 
 * use `gS` an `gJ` to split and join statements
+
+* see https://stackoverflow.com/questions/9549729/vim-insert-the-same-characters-across-multiple-lines/9549765#9549765 for multiline insertions + html tag jumping
