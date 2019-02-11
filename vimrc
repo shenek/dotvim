@@ -118,16 +118,13 @@ let g:ale_sign_warning = '⚠'
 let g:ale_completion_enabled = 0
 
 " python
-let g:ale_python_auto_pipenv = 1
+let g:ale_python_auto_pipenv = 0
 let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
 
-let g:ale_python_auto_pipenv = 1
-let g:ale_python_flake8_auto_pipenv = 1
 let g:ale_python_flake8_options = "--max-line-length=100"
+
 " mypy search path
-let $MYPYPATH = system('python -c "import sys;print(\":\".join(sys.path), end=\"\")"')
-let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache"
-let g:ale_python_mypy_auto_pipenv = 1
+let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable python --ignore-missing-imports"
 
 " rust
 let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
