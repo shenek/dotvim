@@ -163,14 +163,17 @@ if executable('rls')
 endif
 
 set omnifunc=lsp#complete
-map gd :LspDefinition<cr>
-map ge :LspDocumentDiagnostics<cr>
-map gs :LspDocumentSymbol<cr>
-map gt :LspTypeDefinition<cr>
-map gh :LspHover<cr>
+set completeopt=menuone,preview,noinsert,noselect
+nmap gd :LspDefinition<cr>
+nmap ge :LspDocumentDiagnostics<cr>
+nmap gs :LspDocumentSymbol<cr>
+nmap gt :LspTypeDefinition<cr>
+nmap gh :LspHover<cr>
 
 "" asyncomplete plugin
 let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_auto_completeopt = 0
+let g:asyncomplete_smart_completion = 1
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
