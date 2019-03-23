@@ -61,6 +61,10 @@ gruvbox
 -------
 retro color scheme
 
+devdoc
+------
+open a devdoc.io documentation page in a browser
+
 Hints
 =====
 a.k.a. what commands should I use

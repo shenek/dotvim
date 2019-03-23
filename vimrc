@@ -190,3 +190,15 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 :IndentGuidesEnable
+
+"" devdoc - plugin
+augroup plugin-devdocs
+  autocmd!
+  autocmd FileType c,cpp,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
+augroup END
+let g:devdocs_open_cmd = 'firefox'
+
+let g:devdocs_filetype_map = {
+    \   'python': 'python',
+    \   'rust': 'rust',
+    \ }
