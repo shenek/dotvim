@@ -34,3 +34,6 @@
 [submodule "pack/git-plugins/start/rust.vim"]
 	path = pack/git-plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "pack/git-plugins/start/gruvbox"]
+	path = pack/git-plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

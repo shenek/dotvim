@@ -142,16 +142,16 @@ let g:gitgutter_sign_modified = '≈'
 let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_removed_first_line = '--'
 let g:gitgutter_sign_modified_removed = '≈-'
-let g:gitgutter_highlight_lines = 0
+let g:gitgutter_highlight_lines = 1
 
 autocmd BufWritePost * GitGutter " update on save
 
 "" colorscheme
 set t_Co=256
-colorscheme zenburn
-
-let g:zenburn_high_Contrast = 1
-let g:zenburn_force_dark_Background = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_contrast_dark = "soft"
+let g:gruvbox_italicize_comments = 1
+colorscheme gruvbox
 
 "" vim-lsp + omnicomplete
 if (executable('pyls'))

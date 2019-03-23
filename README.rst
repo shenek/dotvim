@@ -57,6 +57,10 @@ rust.vim
 --------
 vim configuration for rust
 
+gruvbox
+-------
+retro color scheme
+
 Hints
 =====
 a.k.a. what commands should I use
