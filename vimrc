@@ -135,6 +135,9 @@ let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable p
 
 " rust
 let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
+let g:ale_rust_cargo_clippy_options = "--all-features"
+let g:ale_rust_cargo_check_all_targets = 1
+
 
 "" gitgutter
 let g:gitgutter_sign_added = '+'
