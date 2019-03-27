@@ -197,7 +197,7 @@ let g:indent_guides_start_level = 2
 "" devdoc - plugin
 augroup plugin-devdocs
   autocmd!
-  autocmd FileType c,cpp,rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
+  autocmd FileType rust,python nmap <buffer>K <Plug>(devdocs-under-cursor)
 augroup END
 let g:devdocs_open_cmd = 'firefox'
 
@@ -205,3 +205,9 @@ let g:devdocs_filetype_map = {
     \   'python': 'python',
     \   'rust': 'rust',
     \ }
+
+"" black
+let g:black_linelength = 100
+augroup plugin-black
+	autocmd FileType python autocmd BufWritePost * silent! :BlackAutosave
+augroup END

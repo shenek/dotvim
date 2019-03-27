@@ -65,6 +65,10 @@ devdoc
 ------
 open a devdoc.io documentation page in a browser
 
+black
+-----
+python text formatter
+
 Hints
 =====
 a.k.a. what commands should I use
