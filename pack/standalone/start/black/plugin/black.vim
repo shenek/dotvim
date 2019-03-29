@@ -82,3 +82,11 @@ endpython3
 command! Black :py3 Black()
 command! BlackAutosave :py3 BlackAutosave()
 command! BlackVersion :py3 BlackVersion()
+
+function! BlackAutosaveIfPython()
+    if &ft=='python'
+        :BlackAutosave
+    endif
+endfunction
+
+command! BlackAutosavePython :call BlackAutosaveIfPython()

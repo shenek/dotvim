@@ -209,5 +209,6 @@ let g:devdocs_filetype_map = {
 "" black
 let g:black_linelength = 100
 augroup plugin-black
-	autocmd FileType python autocmd BufWritePost * silent! :BlackAutosave
+    autocmd!
+    autocmd FileType python autocmd BufWritePost * silent! :BlackAutosavePython
 augroup END
