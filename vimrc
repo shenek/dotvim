@@ -128,7 +128,7 @@ let g:ale_completion_enabled = 0
 let g:ale_python_auto_pipenv = 0
 let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
 
-let g:ale_python_flake8_options = "--max-line-length=100"
+let g:ale_python_flake8_options = "--ignore=E203 --max-line-length=100"
 
 " mypy search path
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable python --ignore-missing-imports"
