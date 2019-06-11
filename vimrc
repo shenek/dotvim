@@ -117,6 +117,13 @@ let g:airline_symbols.whitespace = 'Ξ'
 set laststatus=2
 
 "" ale
+" fixers
+let g:ale_fixers = {
+\  'rust': ['rustfmt', 'remove_trailing_lines', 'trim_whitespace'],
+\  'python': ['black', 'remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_fix_on_save = 1
+
 " signs
 let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚠'
@@ -129,6 +136,8 @@ let g:ale_python_auto_pipenv = 0
 let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
 
 let g:ale_python_flake8_options = "--ignore=E203 --max-line-length=100"
+
+let g:ale_python_black_options = "--line-length 100"
 
 " mypy search path
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable python --ignore-missing-imports"
