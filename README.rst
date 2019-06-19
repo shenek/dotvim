@@ -65,6 +65,10 @@ devdoc
 ------
 open a devdoc.io documentation page in a browser
 
+NERDTree
+--------
+side tree (ctrl+n toggle) (ctrl+f find current file in tree)
+
 Hints
 =====
 a.k.a. what commands should I use

@@ -40,3 +40,9 @@
 [submodule "pack/git-plugins/start/devdocs.vim"]
 	path = pack/git-plugins/start/devdocs.vim
 	url = https://github.com/rhysd/devdocs.vim.git
+[submodule "pack/git-plugins/start/nerdtree"]
+	path = pack/git-plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/git-plugins/start/nerdtree-git-plugin"]
+	path = pack/git-plugins/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git

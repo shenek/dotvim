@@ -221,3 +221,8 @@ augroup plugin-black
     autocmd!
     autocmd FileType python autocmd BufWritePost * silent! :BlackAutosavePython
 augroup END
+
+"" nerdtree
+map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
