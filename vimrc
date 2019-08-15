@@ -144,7 +144,7 @@ let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable p
 
 " rust
 let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
-let g:ale_rust_cargo_clippy_options = '--all-features -- -W clippy::style -W clippy::correctness -W clippy::complexity -W clippy::pedantic -W clippy::nursery -W clippy::perf -W clippy::cargo -A clippy::restriction -W clippy::dbg_macro'
+let g:ale_rust_cargo_clippy_options = '--all-features -- -W clippy::style -W clippy::correctness -W clippy::complexity -W clippy::pedantic -W clippy::nursery -W clippy::perf -W clippy::cargo -A clippy::restriction -W clippy::dbg_macro -A clippy::module_name_repetitions'
 let g:ale_rust_cargo_check_all_targets = 1
 
 
@@ -226,3 +226,7 @@ augroup END
 map <C-n> :NERDTreeToggle<CR>
 map <C-f> :NERDTreeFind<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"" autobraces
+au FileType rust     let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
+au FileType rust     let b:AutoPairs = AutoPairsDefine({':<': '>'})

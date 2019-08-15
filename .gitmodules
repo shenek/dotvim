@@ -46,3 +46,6 @@
 [submodule "pack/git-plugins/start/nerdtree-git-plugin"]
 	path = pack/git-plugins/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/git-plugins/start/auto-pairs"]
+	path = pack/git-plugins/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
