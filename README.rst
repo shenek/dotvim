@@ -69,6 +69,10 @@ NERDTree
 --------
 side tree (ctrl+n toggle) (ctrl+f find current file in tree)
 
+ZoomVim
+-------
+maximazes a window and restores layout afterwards (ctrl+w+o)
+
 Hints
 =====
 a.k.a. what commands should I use

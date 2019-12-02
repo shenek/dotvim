@@ -146,6 +146,7 @@ let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable p
 let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
 let g:ale_rust_cargo_clippy_options = '--all-features -- -W clippy::style -W clippy::correctness -W clippy::complexity -W clippy::pedantic -W clippy::nursery -W clippy::perf -W clippy::cargo -A clippy::restriction -W clippy::dbg_macro -A clippy::module_name_repetitions'
 let g:ale_rust_cargo_check_all_targets = 1
+let g:ale_rust_rustfmt_options = "--edition 2018"
 
 
 "" gitgutter

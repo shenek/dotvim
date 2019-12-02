@@ -49,3 +49,6 @@
 [submodule "pack/git-plugins/start/auto-pairs"]
 	path = pack/git-plugins/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "pack/git-plugins/start/ZoomWin"]
+	path = pack/git-plugins/start/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin.git
