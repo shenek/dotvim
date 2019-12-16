@@ -137,7 +137,11 @@ let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
 
 let g:ale_python_flake8_options = "--ignore=E203 --max-line-length=100"
 
-let g:ale_python_black_options = "--line-length 100"
+if !empty($BLACK_OPTIONS)
+	let g:ale_python_black_options = "$BLACK_OPTIONS"
+else
+	let g:ale_python_black_options = "--line-length 100"
+endif
 
 " mypy search path
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable python --ignore-missing-imports"
