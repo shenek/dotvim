@@ -137,14 +137,14 @@ let g:ale_virtualenv_dir_names = [$VIRTUAL_ENV]
 
 " Try to read flake8 options from an env variable
 if !empty($FLAKE8_OPTIONS)
-	let g:ale_python_flake8_options = "$FLAKE8_OPTIONS"
+	let g:ale_python_flake8_options = $FLAKE8_OPTIONS
 else
 	let g:ale_python_flake8_options = "--ignore=E203 --max-line-length=100"
 endif
 
 " Try to read black options from an env variable
 if !empty($BLACK_OPTIONS)
-	let g:ale_python_black_options = "$BLACK_OPTIONS"
+	let g:ale_python_black_options = $BLACK_OPTIONS
 else
 	let g:ale_python_black_options = "--line-length 100"
 endif
