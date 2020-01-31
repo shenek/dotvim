@@ -52,3 +52,6 @@
 [submodule "pack/git-plugins/start/ZoomWin"]
 	path = pack/git-plugins/start/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "pack/git-plugins/start/FastFold"]
+	path = pack/git-plugins/start/FastFold
+	url = https://github.com/Konfekt/FastFold.git

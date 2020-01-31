@@ -73,6 +73,10 @@ ZoomVim
 -------
 maximazes a window and restores layout afterwards (ctrl+w+o)
 
+FastFold
+--------
+automatic folding
+
 Hints
 =====
 a.k.a. what commands should I use
