@@ -77,6 +77,10 @@ FastFold
 --------
 automatic folding
 
+vim-coiled-snake
+----------------
+a propper folding for python code
+
 Hints
 =====
 a.k.a. what commands should I use
