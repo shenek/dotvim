@@ -148,6 +148,13 @@ if !empty($BLACK_OPTIONS)
 else
 	let g:ale_python_black_options = "--line-length 100"
 endif
+"
+" Try to read isort options from an env variable
+if !empty($ISORT_OPTIONS)
+	let g:ale_python_isort_options = $ISORT_OPTIONS
+else
+	let g:ale_python_isort_options = "--line-width 100"
+endif
 
 " mypy search path
 let g:ale_python_mypy_options = "--cache-dir ~/.mypy_cache --python-executable python --ignore-missing-imports"
