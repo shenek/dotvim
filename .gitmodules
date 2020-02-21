@@ -28,9 +28,6 @@
 [submodule "pack/git-plugins/start/splitjoin.vim"]
 	path = pack/git-plugins/start/splitjoin.vim
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "pack/git-plugins/start/restore_view.vim"]
-	path = pack/git-plugins/start/restore_view.vim
-	url = https://github.com/vim-scripts/restore_view.vim.git
 [submodule "pack/git-plugins/start/rust.vim"]
 	path = pack/git-plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim
@@ -58,3 +55,6 @@
 [submodule "pack/git-plugins/start/vim-coiled-snake"]
 	path = pack/git-plugins/start/vim-coiled-snake
 	url = https://github.com/kalekundert/vim-coiled-snake.git
+[submodule "pack/git-plugins/start/vim-stay"]
+	path = pack/git-plugins/start/vim-stay
+	url = https://github.com/zhimsel/vim-stay.git

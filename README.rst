@@ -49,10 +49,6 @@ splitjoin.vim
 -------------
 easy switching between single-line and multiline statements (you'd probably need to have ruby installed)
 
-restore_view.vim
-----------------
-should restore vim views(cursors, folds) properly
-
 rust.vim
 --------
 vim configuration for rust
@@ -80,6 +76,10 @@ automatic folding
 vim-coiled-snake
 ----------------
 a propper folding for python code
+
+vim-stay
+--------
+should restore folds and cursors properly
 
 Hints
 =====
