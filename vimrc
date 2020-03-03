@@ -182,6 +182,7 @@ let g:gruvbox_italic = 1
 let g:gruvbox_contrast_dark = "soft"
 let g:gruvbox_italicize_comments = 1
 colorscheme gruvbox
+set background=dark
 
 "" vim-lsp + omnicomplete
 if (executable('pyls'))
