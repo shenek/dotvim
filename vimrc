@@ -207,7 +207,7 @@ if executable('rls')
 endif
 
 set omnifunc=lsp#complete
-set completeopt=menuone,preview,noinsert,noselect
+set completeopt=menuone,popup,noinsert,noselect
 nmap gd :LspDefinition<cr>
 nmap ge :LspDocumentDiagnostics<cr>
 nmap gs :LspDocumentSymbol<cr>
